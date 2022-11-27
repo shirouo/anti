@@ -86,7 +86,6 @@ if (config.disable_rotation) then
 end
 
 if (config.anti_ragdoll) then
-    -- i could use humanoid.StateChanged but this is easier (https://en.wikipedia.org/wiki/Trollface)
     cons.antiRagdoll = runServ.Heartbeat:Connect(function()
         if (clientHumanoid) then
             local state = clientHumanoid:GetState().Name
