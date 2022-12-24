@@ -1,4 +1,6 @@
---[[ made by v.0.0.1
+--[[ v.0.0.1
+
+made by
 
 MOE MUEHEHEHE ty for using my script
 
