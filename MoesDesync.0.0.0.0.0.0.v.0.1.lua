@@ -4,25 +4,6 @@ MOE MUEHEHEHE ty for using my script
 
 ]]--
 
-getgenv().ToggleKey = "v"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --// Services
 checkcaller = checkcaller
 newcclosure = newcclosure
