@@ -1,8 +1,8 @@
 --[[ v.0.0.1
 
-made by
+made by MOE
 
-MOE MUEHEHEHE ty for using my script
+MUEHEHEHE ty for using my script
 
 ]]--
 
