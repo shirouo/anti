@@ -39,7 +39,7 @@ Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalP
 Duration = 5
 })
 elseif Notify == true then
-Notify = false
+Notify = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes Desync OFF";
 Text = "Love you " .. game:GetService("Players").LocalPlayer.DisplayName .. "! 💖";
