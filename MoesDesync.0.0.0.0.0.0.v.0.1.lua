@@ -12,6 +12,18 @@ newcclosure = newcclosure
 hookmetamethod = hookmetamethod
             
 local Notify = false
+
+if getgenv().MoesLoaded == true then
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Moes Desync";
+Text = "The script is already loaded!";
+Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
+Duration = 5
+})
+    return
+end
+
+getgenv().MoesLoaded = true
             
 --// Toggles
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeDesync)
