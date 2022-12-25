@@ -1,4 +1,4 @@
---[[ v.0.0.2
+--[[ v.0.0.4
 
 made by MOE
 
@@ -13,6 +13,7 @@ hookmetamethod = hookmetamethod
             
 local Notify = false
 
+--// Check If Executed
 if getgenv().MoesLoaded == true then
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes Desync";
@@ -25,7 +26,7 @@ end
 
 getgenv().MoesLoaded = true
             
---// Toggles
+--// Notification Toggle On and Off
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeDesync)
 if MoeDesync == string.lower(getgenv().ToggleKey) then
 pcall(function()
@@ -51,7 +52,7 @@ end
 end)
 
             
-            
+--// Desync On and Off
 local DesyncTypes = {}
 local moeheartbeat = game:GetService("RunService").heartbeat:Connect(function()
 if Notify == true then
@@ -67,6 +68,7 @@ if Notify == false then
 moeheartbeat:Disconnect()
 end
 
+--// Extra notification :3 silllyyyy 💖
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Desync Executed";
 Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
