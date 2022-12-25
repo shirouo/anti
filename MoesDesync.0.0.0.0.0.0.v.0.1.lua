@@ -63,7 +63,7 @@ end
 end)
 
 local DesyncTypes = {}
-if Notify == true then
+if Notify == false then
 moeheartbeat:Disconnect()
 end
 
