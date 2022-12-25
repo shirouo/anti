@@ -54,3 +54,10 @@ local DesyncTypes = {}
 if Notify == true then
 moeheartbeat:Disconnect()
 end
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Moes Desync Executed";
+Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
+Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
+Duration = 5
+})
