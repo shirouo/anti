@@ -50,12 +50,6 @@ end
 end)
 end
 end)
-
-game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeDesync)
-    if MoeDesync == ("=") then
-        game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer) 
-    end
-end)
             
 --// Desync On and Off
 local DesyncTypes = {}
@@ -80,3 +74,9 @@ Text = "Thank you for using my script " .. game:GetService("Players").LocalPlaye
 Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
 Duration = 5
 })
+
+game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeDesync)
+    if MoeDesync == ("=") then
+        game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer) 
+    end
+end)
