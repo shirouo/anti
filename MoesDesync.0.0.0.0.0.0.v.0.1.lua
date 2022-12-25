@@ -16,7 +16,7 @@ local Notify = false
 if getgenv().MoesLoaded == true then
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes Desync";
-Text = "The script is already loaded!";
+Text = "Moes Desync is already loaded!";
 Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
 Duration = 5
 })
