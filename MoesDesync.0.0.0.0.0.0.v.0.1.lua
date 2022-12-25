@@ -33,7 +33,7 @@ if Notify == false then
 Notify = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes Desync ON";
-Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
+Text = "Love you " .. game:GetService("Players").LocalPlayer.DisplayName .. "! 💖";
 Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
 Duration = 5
 })
@@ -41,7 +41,7 @@ elseif Notify == true then
 Notify = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes Desync OFF";
-Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
+Text = "Love you " .. game:GetService("Players").LocalPlayer.DisplayName .. "! 💖";
 Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
 Duration = 5
 })
