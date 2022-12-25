@@ -51,6 +51,11 @@ end)
 end
 end)
 
+game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeDesync)
+    if MoeDesync == ("=") then
+        game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer) 
+    end
+end)
             
 --// Desync On and Off
 local DesyncTypes = {}
