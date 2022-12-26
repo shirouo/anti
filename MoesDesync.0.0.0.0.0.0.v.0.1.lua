@@ -21,7 +21,7 @@ Text = "Moes Desync is already loaded!";
 Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
 Duration = 5
 })
-    return
+return
 end
 
 getgenv().MoesLoaded = true
@@ -76,7 +76,7 @@ Duration = 5
 })
 
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeDesync)
-    if MoeDesync == ("=") then
-        game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer) 
-    end
+if MoeDesync == ("=") then
+game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer) 
+end
 end)
