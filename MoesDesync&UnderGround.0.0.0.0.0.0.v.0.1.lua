@@ -117,16 +117,16 @@ pcall(function()
 if Notifyy == false then
 Notifyy = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Moes Underground ON";
-Text = "Love you " .. game:GetService("Players").LocalPlayer.DisplayName .. "! 💝";
+Title = "Underground ON";
+Text = game:GetService("Players").LocalPlayer.DisplayName .. " is the best!!";
 Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
 Duration = 5
 })
 elseif Notifyy == true then
 Notifyy = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Moes Underground OFF";
-Text = "Love you " .. game:GetService("Players").LocalPlayer.DisplayName .. "! 💝";
+Title = "Underground OFF";
+Text =  game:GetService("Players").LocalPlayer.DisplayName .. " is the best!!";
 Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
 Duration = 5
 })
