@@ -7,6 +7,7 @@ MUEHEHEHE ty for using my script
 ]]--
 
 --// Services
+
 checkcaller = checkcaller
 newcclosure = newcclosure
 hookmetamethod = hookmetamethod
@@ -28,7 +29,7 @@ getgenv().MoesLoaded = true
             
 --// Notification Toggle On and Off
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeDesync)
-if MoeDesync == string.lower(getgenv().ToggleKey) then
+if MoeDesync == string.lower(getgenv().DesyncToggleKey) then
 pcall(function()
 if Notify == false then
 Notify = true
@@ -80,3 +81,7 @@ if MoeDesync == ("=") then
 game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer) 
 end
 end)
+
+if getgenv().UnderGround = true then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tekuuu/anti/main/MoesUnderground.0.0.0.0.0.0.v.0.1.lua",true))()
+end
