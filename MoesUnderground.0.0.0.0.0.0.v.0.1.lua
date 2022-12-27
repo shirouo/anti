@@ -27,7 +27,7 @@ getgenv().MoeLoadIt = true
             
 --// Notification Toggle On and Off
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeUnderground)
-if MoeUnderground == string.lower(getgenv().UndergroundToggleKey) then
+if MoeUnderground == string.lower(getgenv().UnderGroundToggleKey) then
 pcall(function()
 if Notifyy == false then
 Notifyy = true
