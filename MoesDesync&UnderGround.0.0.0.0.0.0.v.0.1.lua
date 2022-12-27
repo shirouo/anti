@@ -19,8 +19,8 @@ local Notify = false
 --// Check If Executed
 if getgenv().MoesLoaded == true then
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Moes Desync";
-Text = "Moes Desync is already loaded!";
+Title = "Moes silly";
+Text = "Moes script is already loaded!";
 Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
 Duration = 5
 })
@@ -95,19 +95,6 @@ hookmetamethod = hookmetamethod
 
 local UndergroundAmount = "825"
 local Notifyy = false
-
---// Check If Executed
-if getgenv().MoeLoadIt == true then
-game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Moes Underground";
-Text = "Moes Underground is already loaded!";
-Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
-Duration = 5
-})
-return
-end
-
-getgenv().MoeLoadIt = true
             
 --// Notification Toggle On and Off
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeUnderground)
