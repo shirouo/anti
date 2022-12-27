@@ -1,8 +1,10 @@
---[[ v.0.0.5
+--[[ v.0.0.6
 
 made by MOE
 
 MUEHEHEHE ty for using my script
+
+underground basically the same thing as desync just different in a kinda way ... ok..
 
 ]]--
 
@@ -83,18 +85,15 @@ end
 end)
 
 if getgenv().UnderGround == true then
---[[ v.0.0.1
-
-underground basically the same thing as desync just different in a kinda way ... ok..
-
-]]--
-
+            
+--// UnderGround
 --// Services
 wait(5)
 checkcaller = checkcaller
 newcclosure = newcclosure
 hookmetamethod = hookmetamethod
-            
+
+local UndergroundAmount = 825    
 local Notifyy = false
 
 --// Check If Executed
@@ -139,9 +138,8 @@ end)
 local UndergroundTypes = {}
 local Moesheartbeatin = game:GetService("RunService").beatbeat:Connect(function()
 if Notifyy == true then
-getgenv().UndergroundAmount = 825
 local vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
-game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,-         getgenv().UndergroundAmount,0) 
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,-         UndergroundAmount,0) 
 game:GetService("RunService").RenderStepped:Wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = vel
 end
