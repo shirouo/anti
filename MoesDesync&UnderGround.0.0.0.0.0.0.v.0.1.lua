@@ -146,7 +146,7 @@ end
 end)
 
 local UndergroundTypes = {}
-if Notifyy == true then
+if Notifyy == false then
 Moesheartbeatin:Disconnect()
 end
 
