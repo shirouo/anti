@@ -136,7 +136,7 @@ end)
             
 --// Underground On and Off
 local UndergroundTypes = {}
-local Moesheartbeatin = game:GetService("RunService").beatbeat:Connect(function()
+local Moesheartbeatin = game:GetService("RunService").Heartbeat:Connect(function()
 if Notifyy == true then
 local vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
 game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0,-         UndergroundAmount,0) 
