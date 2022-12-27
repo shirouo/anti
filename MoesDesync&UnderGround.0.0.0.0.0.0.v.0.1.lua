@@ -93,7 +93,7 @@ checkcaller = checkcaller
 newcclosure = newcclosure
 hookmetamethod = hookmetamethod
 
-local UndergroundAmount = 825    
+local UndergroundAmount = "825"
 local Notifyy = false
 
 --// Check If Executed
@@ -152,7 +152,7 @@ end
 
 --// silllyyyy notif ;-;
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Underground Executed";
+Title = "Underground Loaded";
 Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
 Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
 Duration = 5
