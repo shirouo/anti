@@ -72,7 +72,7 @@ end
 
 --// Extra notification :3 silllyyyy 💖
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Desync Executed";
+Title = "Desync Loaded";
 Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
 Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
 Duration = 5
