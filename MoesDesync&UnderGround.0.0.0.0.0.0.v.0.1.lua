@@ -159,7 +159,7 @@ Duration = 5
 wait(10)
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "IMPORTANT";
-Text = "hello! pressing = makes you auto rejoin, you can type it in chat but press it to rejoin!";
+Text = "hello! pressing = makes you auto rejoin.";
 Icon = "rbxassetid://1407578497&w=180&h=180 true";
 Duration = 10
 })
