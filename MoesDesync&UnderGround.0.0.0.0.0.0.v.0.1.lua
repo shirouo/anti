@@ -2,7 +2,7 @@
 
 made by MOE
 
-underground basically the same thing as desync script wise just different in a kinda way ... ok..
+underground basically the same thing as desync script wise just different in a kinda way ... idk..
 
 MUEHEHEHE ty for using my script
 
