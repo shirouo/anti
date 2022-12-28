@@ -1,4 +1,4 @@
---[[ v.0.1.2
+--[[ v.0.1.3
 
 made by MOE
 
@@ -7,6 +7,8 @@ MUEHEHEHE ty for using my script
 yes!! .....
 
 ok.. i hate waiting for gh to update..
+
+raging.
 
 underground basically the same thing as desync just different in a kinda way ... ok..
 
