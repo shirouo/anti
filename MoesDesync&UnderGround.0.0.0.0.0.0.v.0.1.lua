@@ -28,7 +28,7 @@ local Notify = false
 if getgenv().MoesLoaded == true then
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes silly";
-Text = "Moes script is already loaded!";
+Text = "Moes script is already loaded! 🙂";
 Icon = "rbxassetid://1407578497&w=180&h=180 true";
 Duration = 5
 })
@@ -81,7 +81,7 @@ end
 --// Extra notification :3 silllyyyy 💖
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Desync Loaded";
-Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
+Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "! 💖 never give up on urself, love u all.";
 Icon = "rbxassetid://1407578497&w=180&h=180 true";
 Duration = 5
 })
@@ -148,7 +148,7 @@ end
 --// silllyyyy notif ;-;
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Under Loaded";
-Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
+Text = "u deserve everything. have a great day please " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
 Icon = "rbxassetid://1407578497&w=180&h=180 true";
 Duration = 5
 })
