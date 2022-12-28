@@ -4,6 +4,8 @@ made by MOE
 
 MUEHEHEHE ty for using my script
 
+yes!! .....
+
 underground basically the same thing as desync just different in a kinda way ... ok..
 
 ]]--
