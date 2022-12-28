@@ -6,7 +6,7 @@ MUEHEHEHE ty for using my script
 
 yes!! .....
 
-ok.. i hate waiting for gh to update..
+ok.. i hate waiting for github to update..
 
 raging.
 
