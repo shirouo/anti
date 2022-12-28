@@ -1,4 +1,4 @@
---[[ v.0.0.9
+--[[ v.0.1.0
 
 made by MOE
 
@@ -21,7 +21,7 @@ if getgenv().MoesLoaded == true then
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes silly";
 Text = "Moes script is already loaded!";
-Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
+Icon = "rbxassetid://11948110123&w=180&h=180 true";
 Duration = 5
 })
 return
@@ -37,16 +37,14 @@ if Notify == false then
 Notify = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes Desync ON";
-Text = "Love you " .. game:GetService("Players").LocalPlayer.DisplayName .. "! 💖";
-Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
+Icon = "rbxassetid://11948110123&w=180&h=180 true";
 Duration = 5
 })
 elseif Notify == true then
 Notify = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes Desync OFF";
-Text = "Love you " .. game:GetService("Players").LocalPlayer.DisplayName .. "! 💖";
-Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
+Icon = "rbxassetid://11948110123&w=180&h=180 true";
 Duration = 5
 })
 end
@@ -74,7 +72,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Desync Loaded";
 Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
-Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
+Icon = "rbxassetid://11948110123&w=180&h=180 true";
 Duration = 5
 })
 
@@ -104,16 +102,14 @@ if Notifyy == false then
 Notifyy = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Underground ON";
-Text = game:GetService("Players").LocalPlayer.DisplayName .. " is the best!!";
-Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
+Icon = "rbxassetid://11948110123&w=180&h=180 true";
 Duration = 5
 })
 elseif Notifyy == true then
 Notifyy = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Underground OFF";
-Text =  game:GetService("Players").LocalPlayer.DisplayName .. " is the best!!";
-Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
+Icon = "rbxassetid://11948110123&w=180&h=180 true";
 Duration = 5
 })
 end
@@ -141,7 +137,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Under Loaded :p";
 Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
-Icon = "rbxthumb://type=AvatarHeadShot&id=" .. game:GetService("Players").LocalPlayer.UserId .. "&w=180&h=180 true";
+Icon = "rbxassetid://11948110123&w=180&h=180 true";
 Duration = 5
 })
 end
