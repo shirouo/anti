@@ -28,7 +28,7 @@ local Notify = false
 if getgenv().MoesLoaded == true then
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes silly";
-Text = "Moes script is already loaded! 🙂";
+Text = "Moes script is already loaded!";
 Icon = "rbxassetid://1407578497&w=180&h=180 true";
 Duration = 5
 })
