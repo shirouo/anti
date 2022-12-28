@@ -4,18 +4,6 @@ made by MOE
 
 underground basically the same thing as desync script wise just different in a kinda way ... idk..
 
-MUEHEHEHE ty for using my script
-
-yes!! .....
-
-ok.. i hate waiting for github to update..
-
-raging.
-
-insert frowning face here
-
-pls..
-
 ]]--
 
 --// Services
