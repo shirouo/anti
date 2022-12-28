@@ -25,7 +25,7 @@ if getgenv().MoesLoaded == true then
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes silly";
 Text = "Moes script is already loaded!";
-Icon = "rbxassetid://11948110123&w=150&h=150 true";
+Icon = "rbxassetid://11948110123&w=110&h=110 true";
 Duration = 5
 })
 return
@@ -42,7 +42,7 @@ Notify = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes Desync ON";
 Text = "";
-Icon = "rbxassetid://11948110123&w=150&h=150 true";
+Icon = "rbxassetid://11948110123&w=110&h=110 true";
 Duration = 5
 })
 elseif Notify == true then
@@ -50,7 +50,7 @@ Notify = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Moes Desync OFF";
 Text = "";
-Icon = "rbxassetid://11948110123&w=150&h=150 true";
+Icon = "rbxassetid://11948110123&w=110&h=110 true";
 Duration = 5
 })
 end
@@ -78,7 +78,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Desync Loaded";
 Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
-Icon = "rbxassetid://11948110123&w=150&h=150 true";
+Icon = "rbxassetid://11948110123&w=110&h=110 true";
 Duration = 5
 })
 
@@ -109,7 +109,7 @@ Notifyy = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Underground ON";
 Text = "";
-Icon = "rbxassetid://11948110123&w=150&h=150 true";
+Icon = "rbxassetid://11948110123&w=110&h=110 true";
 Duration = 5
 })
 elseif Notifyy == true then
@@ -117,7 +117,7 @@ Notifyy = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Underground OFF";
 Text = "";
-Icon = "rbxassetid://11948110123&w=150&h=150 true";
+Icon = "rbxassetid://11948110123&w=110&h=110 true";
 Duration = 5
 })
 end
@@ -145,7 +145,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Under Loaded :p";
 Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
-Icon = "rbxassetid://11948110123&w=150&h=150 true";
+Icon = "rbxassetid://11948110123&w=110&h=110 true";
 Duration = 5
 })
 end
