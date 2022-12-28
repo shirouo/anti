@@ -147,7 +147,7 @@ end
 
 --// silllyyyy notif ;-;
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Under Loaded :p";
+Title = "Under Loaded";
 Text = "Thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
 Icon = "rbxassetid://11948110123&w=90&h=90 true";
 Duration = 5
