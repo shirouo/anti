@@ -17,9 +17,9 @@ local Notify = false
 --// Check If Executed
 if getgenv().MoesLoaded == true then
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Moes silly";
-Text = "Moes script is already loaded!";
-Icon = "rbxassetid://1407578497&w=180&h=180 true";
+Title = "Shirou";
+Text = "The script is already loaded!";
+Icon = "rbxassetid://12624498811";
 Duration = 5
 })
 return
@@ -34,17 +34,17 @@ pcall(function()
 if Notify == false then
 Notify = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Moes Desync ON";
+Title = "Shirous Desync ON";
 Text = "";
-Icon = "rbxassetid://1407578497&w=180&h=180 true";
+Icon = "rbxassetid://12624498811";
 Duration = 5
 })
 elseif Notify == true then
 Notify = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Moes Desync OFF";
+Title = "Shirous Desync OFF";
 Text = "";
-Icon = "rbxassetid://1407578497&w=180&h=180 true";
+Icon = "rbxassetid://12624498811";
 Duration = 5
 })
 end
@@ -72,7 +72,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Desync Loaded";
 Text = "thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
-Icon = "rbxassetid://1407578497&w=180&h=180 true";
+Icon = "rbxassetid://12624498811";
 Duration = 5
 })
 
@@ -103,7 +103,7 @@ Notifyy = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Underground ON";
 Text = "";
-Icon = "rbxassetid://1407578497&w=180&h=180 true";
+Icon = "rbxassetid://12624498811";
 Duration = 5
 })
 elseif Notifyy == true then
@@ -111,7 +111,7 @@ Notifyy = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Underground OFF";
 Text = "";
-Icon = "rbxassetid://1407578497&w=180&h=180 true";
+Icon = "rbxassetid://12624498811";
 Duration = 5
 })
 end
@@ -139,7 +139,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Under Loaded";
 Text = "have a great day " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
-Icon = "rbxassetid://1407578497&w=180&h=180 true";
+Icon = "rbxassetid://12624498811";
 Duration = 5
 })
             
@@ -148,7 +148,7 @@ wait(10)
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "IMPORTANT";
 Text = "hello! pressing = makes you auto rejoin.";
-Icon = "rbxassetid://1407578497&w=180&h=180 true";
+Icon = "rbxassetid://12624498811";
 Duration = 15
 })
 end
