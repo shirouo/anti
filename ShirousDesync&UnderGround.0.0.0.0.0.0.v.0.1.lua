@@ -76,6 +76,78 @@ Icon = "rbxassetid://12624498811";
 Duration = 5
 })
 
+
+--// PREDICTION BREAKER
+
+wait(1.5)
+local heartbeat = game:GetService("RunService").Heartbeat
+local renderstepped = game:GetService("RunService").RenderStepped
+local stepped = game:GetService("RunService").Stepped
+local v3 = Vector3.new
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+local lp = game.Players.LocalPlayer
+local hrp, c, vel, movel = nil, nil, nil, 0.1
+c = lp.Character
+hrp = lp.Character.HumanoidRootPart
+
+local Notifyyy = false
+
+game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(ShirouPB)
+if ShirouPB == string.lower(getgenv().PBToggleKey) then
+pcall(function()
+if Notifyyy == false then
+Notifyyy = true
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Shirous PB ON";
+Text = "Prediction Breaker";
+Icon = "rbxassetid://12624498811";
+Duration = 5
+})
+elseif Notifyyy == true then
+Notifyyy = false
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Shirous PB OFF";
+Text = "Prediction Breaker";
+Icon = "rbxassetid://12624498811";
+Duration = 5
+})
+end
+end)
+end
+end)
+            
+--// Prediction breaker On and Off
+local PBTypes = {}
+local ShirouPBH = game:GetService("RunService").heartbeat:Connect(function()
+if Notifyyy == true then
+ShirouPBH:Wait()
+c = lp.Character
+hrp = lp.Character.HumanoidRootPart
+vel = hrp.Velocity
+hrp.Velocity = vel*-0+v3(-0,-0,-0)
+renderstepped:Wait()
+hrp.Velocity = vel
+stepped:Wait()
+if c and c.Parent and hrp and hrp.Parent then
+hrp.Velocity = vel + v3(0, movel, 0)
+movel = movel * -1
+end
+end
+end)
+
+local PBTypes = {}
+if Notifyyy == true then
+ShirouPBH:Disconnect()
+end
+
+--// Extra notification :3 silllyyyy 💖
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "PB Loaded";
+Text = "";
+Icon = "rbxassetid://12624498811";
+Duration = 5
+})
+
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeDesync)
 if MoeDesync == ("=") then
 game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer) 
