@@ -1,9 +1,8 @@
 --[[ v.0.2.0
-
-made by MOE
-
-underground basically the same thing as desync script wise just different in a kinda way ... idk..
-
+made by shirou
+underground = makes lockers look at feet
+desync = makes lockers look at sky
+prediction breaker = makes lockers have 0 prediction, WALK IN A LIKE SIDEWAYS. they wont hit you if theyre locking.
 ]]--
 
 --// Services
@@ -111,14 +110,24 @@ end)
 local PBTypes = {}
 local ShirouPBH = game:GetService("RunService").heartbeat:Connect(function()
 if Notifyyy == true then
-ShirouPBH:Wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity*-0+v3(-0,-0,-0)
-game:GetService("RunService").RenderStepped:Wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
-game:GetService("RunService").Stepped:Wait()
-if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character.Parent and game.Players.LocalPlayer.Character.HumanoidRootPart and game.Players.LocalPlayer.Character.HumanoidRootPart.Parent then
-game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity + v3(0, 0.1, 0)
-0.1 = 0.1 * -1
+local renderstepped = game:GetService("RunService").RenderStepped
+local stepped = game:GetService("RunService").Stepped
+local v3 = Vector3.new
+local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+local lp = game.Players.LocalPlayer
+    local hrp, c, vel, movel = nil, nil, nil, 0.1
+    c = lp.Character
+    hrp = lp.Character.HumanoidRootPart
+            c = lp.Character
+            hrp = lp.Character.HumanoidRootPart
+            vel = hrp.Velocity
+            hrp.Velocity = vel*-0+v3(-0,-0,-0)
+            renderstepped:Wait()
+            hrp.Velocity = vel
+            stepped:Wait()
+            if c and c.Parent and hrp and hrp.Parent then
+                hrp.Velocity = vel + v3(0, movel, 0)
+                movel = movel * -1
 end
 end
 end)
