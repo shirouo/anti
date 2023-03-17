@@ -1,8 +1,10 @@
 --[[ v.0.2.0
 made by shirou
-underground = makes lockers look at feet
-desync = makes lockers look at sky
-prediction breaker = makes lockers have 0 prediction, WALK IN A LIKE SIDEWAYS. they wont hit you if theyre locking.
+underground = makes lockers look at feet // 99% of lockers resolve this, to know if they can be affected by this. see if they ground shoot.
+desync = makes lockers look at sky // a lot of lockers can resolve this now. but if they have prediction they usually can be antid like this.
+prediction breaker = makes lockers have 0 prediction, WALK IN A LINE SIDEWAYS. they wont hit you if theyre locking.
+
+prediction breaker works on 99% of all lockers, as it makes their prediction 0. they hit nothing if you walk in a line sideways.
 ]]--
 
 --// Services
