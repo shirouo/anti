@@ -19,7 +19,8 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Shirous anti";
 Text = "The script is already loaded!";
 Icon = "";
-Duration = 5
+Duration = 5;
+Button1 = "Youre cool!"
 })
 return
 end
