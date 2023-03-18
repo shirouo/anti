@@ -1,5 +1,4 @@
---[[ v.0.2.0
-made by shirou
+--[[ made by shirou
 underground = makes lockers look at feet // 99% of lockers resolve this, to know if they can be affected by this. see if they ground shoot.
 desync = makes lockers look at sky // a lot of lockers can resolve this now. but if they have prediction they usually can be antid like this.
 prediction breaker = makes lockers have 0 prediction, WALK IN A LINE SIDEWAYS. they wont hit you if theyre locking.
@@ -8,7 +7,6 @@ prediction breaker works on 99% of all lockers, as it makes their prediction 0. 
 ]]--
 
 --// Services
-
 checkcaller = checkcaller
 newcclosure = newcclosure
 hookmetamethod = hookmetamethod
@@ -18,16 +16,20 @@ local Notify = false
 --// Check If Executed
 if getgenv().MoesLoaded == true then
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Shirou";
+Title = "Shirous anti";
 Text = "The script is already loaded!";
-Icon = "rbxassetid://12624498811";
+Icon = "";
 Duration = 5
 })
 return
 end
 
 getgenv().MoesLoaded = true
-            
+
+
+---------- DESYNC ----------
+
+
 --// Notification Toggle On and Off
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeDesync)
 if MoeDesync == string.lower(getgenv().DesyncToggleKey) then
@@ -35,17 +37,17 @@ pcall(function()
 if Notify == false then
 Notify = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Shirous Desync ON";
-Text = "";
-Icon = "rbxassetid://12624498811";
+Title = "Desync";
+Text = "Enabled - shirou#1077";
+Icon = "";
 Duration = 5
 })
 elseif Notify == true then
 Notify = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Shirous Desync OFF";
-Text = "";
-Icon = "rbxassetid://12624498811";
+Title = "Desync";
+Text = "Disabled - shirou#1077";
+Icon = "";
 Duration = 5
 })
 end
@@ -73,12 +75,13 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Desync Loaded";
 Text = "thank you for using my script " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
-Icon = "rbxassetid://12624498811";
+Icon = "";
 Duration = 5
 })
 
 
---// PREDICTION BREAKER
+---------- PREDICTION BREAKER ----------
+
 
 wait(1.5)
 
@@ -87,20 +90,20 @@ local Notifyyy = false
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(ShirouPB)
 if ShirouPB == string.lower(getgenv().PBToggleKey) then
 pcall(function()
-if Notifyyy == false then
-Notifyyy = true
+if Notify == false then
+Notify = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Shirous PB ON";
-Text = "Prediction Breaker";
-Icon = "rbxassetid://12624498811";
+Title = "Pred Breaker";
+Text = "Enabled - shirou#1077";
+Icon = "";
 Duration = 5
 })
-elseif Notifyyy == true then
-Notifyyy = false
+elseif Notify == true then
+Notify = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Shirous PB OFF";
-Text = "Prediction Breaker";
-Icon = "rbxassetid://12624498811";
+Title = "Pred Breaker";
+Text = "Disabled - shirou#1077";
+Icon = "";
 Duration = 5
 })
 end
@@ -117,19 +120,19 @@ local stepped = game:GetService("RunService").Stepped
 local v3 = Vector3.new
 local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
 local lp = game.Players.LocalPlayer
-    local hrp, c, vel, movel = nil, nil, nil, 0.1
-    c = lp.Character
-    hrp = lp.Character.HumanoidRootPart
-            c = lp.Character
-            hrp = lp.Character.HumanoidRootPart
-            vel = hrp.Velocity
-            hrp.Velocity = vel*-0+v3(-0,-0,-0)
-            renderstepped:Wait()
-            hrp.Velocity = vel
-            stepped:Wait()
-            if c and c.Parent and hrp and hrp.Parent then
-                hrp.Velocity = vel + v3(0, movel, 0)
-                movel = movel * -1
+local hrp, c, vel, movel = nil, nil, nil, 0.1
+c = lp.Character
+hrp = lp.Character.HumanoidRootPart
+c = lp.Character
+hrp = lp.Character.HumanoidRootPart
+vel = hrp.Velocity
+hrp.Velocity = vel*-0+v3(-0,-0,-0)
+renderstepped:Wait()
+hrp.Velocity = vel
+stepped:Wait()
+if c and c.Parent and hrp and hrp.Parent then
+hrp.Velocity = vel + v3(0, movel, 0)
+movel = movel * -1
 end
 end
 end)
@@ -143,7 +146,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "PB Loaded";
 Text = "have a great day " .. game:GetService("Players").LocalPlayer.DisplayName .. "!";
-Icon = "rbxassetid://12624498811";
+Icon = "";
 Duration = 5
 })
 
@@ -153,10 +156,22 @@ game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer)
 end
 end)
 
+--// notif so ur silly self knows a extra keybind!
+wait(10)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "IMPORTANT";
+Text = "hello! pressing = makes you auto rejoin.";
+Icon = "";
+Duration = 15
+})
+
+
+---------- UNDERGROUND ----------
+
+
 if getgenv().UnderGround == true then
-            
---// UnderGround
 wait(1.5)
+
 checkcaller = checkcaller
 newcclosure = newcclosure
 hookmetamethod = hookmetamethod
@@ -168,20 +183,20 @@ local Notifyy = false
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(MoeUnderground)
 if MoeUnderground == string.lower(getgenv().UnderGroundToggleKey) then
 pcall(function()
-if Notifyy == false then
-Notifyy = true
+if Notify == false then
+Notify = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Underground ON";
-Text = "";
-Icon = "rbxassetid://12624498811";
+Title = "Underground";
+Text = "Enabled - shirou#1077";
+Icon = "";
 Duration = 5
 })
-elseif Notifyy == true then
-Notifyy = false
+elseif Notify == true then
+Notify = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Underground OFF";
-Text = "";
-Icon = "rbxassetid://12624498811";
+Title = "Underground";
+Text = "Disabled - shirou#1077";
+Icon = "";
 Duration = 5
 })
 end
@@ -207,18 +222,9 @@ end
 
 --// silllyyyy notif ;-;
 game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "Under Loaded";
+Title = "UG Loaded";
 Text = "";
-Icon = "rbxassetid://12624498811";
+Icon = "";
 Duration = 5
-})
-            
---// notif so ur silly self knows a extra keybind!
-wait(10)
-game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "IMPORTANT";
-Text = "hello! pressing = makes you auto rejoin.";
-Icon = "rbxassetid://12624498811";
-Duration = 15
 })
 end
