@@ -157,15 +157,6 @@ game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer)
 end
 end)
 
---// notif so ur silly self knows a extra keybind!
-wait(10)
-game:GetService("StarterGui"):SetCore("SendNotification", {
-Title = "IMPORTANT";
-Text = "hello! pressing = makes you auto rejoin.";
-Icon = "";
-Duration = 15
-})
-
 
 ---------- UNDERGROUND ----------
 
@@ -229,3 +220,12 @@ Icon = "";
 Duration = 5
 })
 end
+
+--// notif so ur silly self knows a extra keybind!
+wait(10)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "IMPORTANT";
+Text = "hello! pressing = makes you auto rejoin.";
+Icon = "";
+Duration = 15
+})
