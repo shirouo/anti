@@ -39,7 +39,7 @@ if Notify == false then
 Notify = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Desync";
-Text = "Enabled - shirou#1077";
+Text = "Enabled - shirou#0001";
 Icon = "";
 Duration = 5
 })
@@ -47,7 +47,7 @@ elseif Notify == true then
 Notify = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Desync";
-Text = "Disabled - shirou#1077";
+Text = "Disabled - shirou#0001";
 Icon = "";
 Duration = 5
 })
@@ -95,7 +95,7 @@ if Notify == false then
 Notify = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Pred Breaker";
-Text = "Enabled - shirou#1077";
+Text = "Enabled - shirou#0001";
 Icon = "";
 Duration = 5
 })
@@ -103,7 +103,7 @@ elseif Notify == true then
 Notify = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Pred Breaker";
-Text = "Disabled - shirou#1077";
+Text = "Disabled - shirou#0001";
 Icon = "";
 Duration = 5
 })
@@ -179,7 +179,7 @@ if Notify == false then
 Notify = true
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Underground";
-Text = "Enabled - shirou#1077";
+Text = "Enabled - shirou#0001";
 Icon = "";
 Duration = 5
 })
@@ -187,7 +187,7 @@ elseif Notify == true then
 Notify = false
 game:GetService("StarterGui"):SetCore("SendNotification", {
 Title = "Underground";
-Text = "Disabled - shirou#1077";
+Text = "Disabled - shirou#0001";
 Icon = "";
 Duration = 5
 })
