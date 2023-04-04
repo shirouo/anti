@@ -55,13 +55,33 @@ end
 end)
 end
 end)
+
+getgenv().Direction = nil
+
+if getgenv().DesyncDirection == "Behind" then
+getgenv().Direction = Vector3.new(0, 0, -1)
+elseif getgenv().DirectionToShoot == "Down" then
+getgenv().Direction = Vector3.new(0, -1, 0)
+elseif getgenv().DirectionToShoot == "ForWard" then
+getgenv().Direction = Vector3.new(0, 0, 1)
+elseif getgenv().DirectionToShoot == "Left" then
+getgenv().Direction = Vector3.new(-1, 0, 0)
+elseif getgenv().DirectionToShoot == "One" then
+getgenv().Direction = Vector3.new(1, 1, 1)
+elseif getgenv().DirectionToShoot == "Right" then
+getgenv().Direction = Vector3.new(1, 0, 0)
+elseif getgenv().DirectionToShoot == "Up" then
+getgenv().Direction = Vector3.new(0, 1, 0)
+elseif getgenv().DirectionToShoot == "Zero" then
+getgenv().Direction = Vector3.new(0, 0, 0)
+end
             
 --// Desync On and Off
 local DesyncTypes = {}
 local moeheartbeat = game:GetService("RunService").heartbeat:Connect(function()
 if Notify == true then
 local abc = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
-game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(1,1,1) * (2^16)
+game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = getgenv().Direction * (2^16)
 game:GetService("RunService").RenderStepped:Wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = abc
 end
