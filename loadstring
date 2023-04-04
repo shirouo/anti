@@ -4,8 +4,8 @@ getgenv().DesyncDirection = "Behind"
 --[[
 DESYNC DIRECTION OPTIONS
   Behind
-  Up -- can easily be resolved with underground resolver
-  Down -- can easily be resolved with underground resolver
+  Up   -- // can easily be resolved with underground resolver
+  Down -- // can easily be resolved with underground resolver
   Front
   Left
   One
