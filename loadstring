@@ -15,7 +15,7 @@ DESYNC DIRECTION OPTIONS
 
 getgenv().PBToggleKey = "c"          -- // your prediction breaker toggle key
 
-getgenv().UnderGround = true         -- // if u want underground on
+getgenv().UnderGround = true         -- // if u want underground on / can easily be resolved with underground resolver
 getgenv().UnderGroundToggleKey = "x" -- // your underground toggle key
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shirouo/anti/main/ShirousDesync%26UnderGround.0.0.0.0.0.0.v.0.1.lua",true))()
