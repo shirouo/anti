@@ -60,19 +60,19 @@ getgenv().Direction = nil
 
 if getgenv().DesyncDirection == "Behind" then
 getgenv().Direction = Vector3.new(0, 0, -1)
-elseif getgenv().DirectionToShoot == "Down" then
+elseif getgenv().DesyncDirection == "Down" then
 getgenv().Direction = Vector3.new(0, -1, 0)
-elseif getgenv().DirectionToShoot == "ForWard" then
+elseif getgenv().DesyncDirection == "Front" then
 getgenv().Direction = Vector3.new(0, 0, 1)
-elseif getgenv().DirectionToShoot == "Left" then
+elseif getgenv().DesyncDirection == "Left" then
 getgenv().Direction = Vector3.new(-1, 0, 0)
-elseif getgenv().DirectionToShoot == "One" then
+elseif getgenv().DesyncDirection == "One" then
 getgenv().Direction = Vector3.new(1, 1, 1)
-elseif getgenv().DirectionToShoot == "Right" then
+elseif getgenv().DesyncDirection == "Right" then
 getgenv().Direction = Vector3.new(1, 0, 0)
-elseif getgenv().DirectionToShoot == "Up" then
+elseif getgenv().DesyncDirection == "Up" then
 getgenv().Direction = Vector3.new(0, 1, 0)
-elseif getgenv().DirectionToShoot == "Zero" then
+elseif getgenv().DesyncDirection == "Zero" then
 getgenv().Direction = Vector3.new(0, 0, 0)
 end
             
